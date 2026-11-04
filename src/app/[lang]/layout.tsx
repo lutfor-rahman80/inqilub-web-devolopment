@@ -1,4 +1,5 @@
 import "server-only";
+import "../globals.css";
 import { notFound } from "next/navigation";
 import { lang as getLang } from "next/root-params";
 import { isLocale, DEFAULT_LOCALE, type Locale } from "@/i18n/config";
