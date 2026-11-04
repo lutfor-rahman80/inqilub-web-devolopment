@@ -1,0 +1,365 @@
+/* ==========================================================================
+   Shared compact site header (student.html + index.html)
+   Height budget: ~76px desktop, 52px mobile. Solid green, no photo behind it.
+   ========================================================================== */
+
+.site-header {
+  position: relative;
+  z-index: 20;
+  background: linear-gradient(180deg, #064e3b 0%, #05432f 100%);
+  color: #ffffff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+}
+
+.site-header .header-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 104px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.header-logo-area {
+  flex: 0 0 auto;
+  display: flex;
+}
+
+.site-logo {
+  display: block;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fbbf24;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.header-brand {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.org-title {
+  margin: 0;
+  font-size: 1.7rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.event-badge {
+  display: block;
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #fde68a;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.header-qr-area {
+  flex: 0 0 auto;
+}
+
+/* The whole QR block is one link: white box with the code + label BELOW it,
+   outside the white box, on the green header. */
+.qr-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  color: #d1fae5;
+  text-decoration: none;
+}
+
+.qr-card {
+  display: block;
+  padding: 5px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.qr-link:hover .qr-card {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.qr-link:hover .qr-label {
+  color: #ffffff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.qr-link:focus-visible,
+.admin-link:focus-visible,
+.btn-admin-logout:focus-visible {
+  outline: 2px solid #fbbf24;
+  outline-offset: 3px;
+  border-radius: 8px;
+}
+
+.qr-image {
+  display: block;
+  width: 60px;
+  height: 60px;
+}
+
+.qr-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1.3;
+  white-space: nowrap;
+  transition: color 0.2s ease;
+}
+
+/* ---- Header Helpline (সরাসরি ডায়ালযোগ্য) ----------------------------------- */
+.header-helpline-area {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.22);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 10px;
+  padding: 6px 14px;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.header-helpline-area:hover {
+  background: rgba(0, 0, 0, 0.3);
+  border-color: rgba(251, 191, 36, 0.4);
+}
+
+.header-helpline-head {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #fde68a;
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 4px;
+}
+
+.header-helpline-numbers {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.header-helpline-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: 0.4px;
+  line-height: 1.3;
+  padding: 1px 6px;
+  border-radius: 4px;
+  transition: all 0.15s ease;
+}
+
+.header-helpline-link:hover {
+  color: #a7f3d0;
+  background: rgba(255, 255, 255, 0.12);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* ---- Admin strip (index.html only) ---------------------------------------- */
+
+.admin-strip {
+  background: rgba(0, 0, 0, 0.22);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.site-header .admin-strip-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  min-height: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.admin-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 10px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #fef3c7;
+  background: rgba(251, 191, 36, 0.22);
+  border: 1px solid rgba(251, 191, 36, 0.4);
+  border-radius: 9999px;
+}
+
+.admin-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.admin-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 8px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #d1fae5;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.admin-link:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.btn-admin-logout {
+  min-height: 32px;
+  padding: 4px 14px;
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #fecaca;
+  background: rgba(239, 68, 68, 0.2);
+  border: 1px solid rgba(239, 68, 68, 0.45);
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.btn-admin-logout:hover {
+  background: rgba(239, 68, 68, 0.35);
+}
+
+/* ---- Mobile --------------------------------------------------------------- */
+
+@media (max-width: 640px) {
+  .container.container--tight {
+    padding-left: 8px;
+    padding-right: 6px;
+  }
+
+  .site-header .header-bar {
+    gap: 8px;
+    min-height: 64px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .site-logo {
+    width: 40px;
+    height: 40px;
+    border-width: 2px;
+  }
+
+  .header-brand {
+    min-width: 0;
+  }
+
+  .org-title {
+    font-size: 1.08rem;
+    line-height: 1.2;
+    letter-spacing: -0.2px;
+  }
+
+  .event-badge {
+    font-size: 0.72rem;
+    line-height: 1.25;
+    letter-spacing: -0.1px;
+  }
+
+  .header-helpline-area {
+    padding: 2px 4px;
+    border-radius: 6px;
+  }
+
+  .header-helpline-head {
+    font-size: 0.62rem;
+    gap: 2px;
+    margin-bottom: 1px;
+  }
+
+  .header-helpline-head svg {
+    width: 10px;
+    height: 10px;
+  }
+
+  .header-helpline-numbers {
+    gap: 1px;
+  }
+
+  .header-helpline-link {
+    font-size: 0.66rem;
+    padding: 0 1px;
+    letter-spacing: -0.2px;
+    line-height: 1.15;
+  }
+
+  .header-qr-area {
+    margin-left: auto;
+  }
+
+  .qr-link {
+    gap: 2px;
+  }
+
+  .qr-card {
+    padding: 3px;
+    border-radius: 8px;
+  }
+
+  .qr-image {
+    width: 38px;
+    height: 38px;
+  }
+
+  .qr-label {
+    font-size: 0.56rem;
+    line-height: 1.1;
+  }
+
+  .qr-label svg {
+    display: none;
+  }
+
+  .site-header .admin-strip-inner {
+    min-height: 36px;
+    gap: 6px;
+  }
+
+  .admin-actions {
+    gap: 4px;
+  }
+
+  .admin-link {
+    padding: 4px 6px;
+    font-size: 0.78rem;
+  }
+
+  .btn-admin-logout {
+    padding: 4px 10px;
+  }
+}

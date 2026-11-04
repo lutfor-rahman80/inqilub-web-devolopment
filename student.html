@@ -1,0 +1,2233 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ইনকিলাব যুব সংগঠন – সীরাত কুইজ - ২০২৬ইং ফলাফল</title>
+  <meta name="description"
+    content="ইনকিলাব যুব সংগঠন কর্তৃক আয়োজিত সীরাত কুইজ - ২০২৬ইং এর ফলাফল। রোল নাম্বার ও শিক্ষাপ্রতিষ্ঠানের নাম দিয়ে আপনার রেজাল্ট দেখুন।">
+  <meta name="theme-color" content="#064e3b">
+  <link rel="icon" type="image/jpeg" href="assets/logo.jpg">
+  <link rel="apple-touch-icon" href="assets/logo.jpg">
+
+  <!-- Open Graph / Twitter: Facebook-এ শেয়ার করলে প্রিভিউ কার্ড দেখাবে।
+       TODO: YOUR-DOMAIN.example বদলে আপনার আসল ডোমেইন বসান (og:image অবশ্যই পূর্ণ URL হতে হবে) -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="bn_BD">
+  <meta property="og:site_name" content="ইনকিলাব যুব সংগঠন">
+  <meta property="og:title" content="ইনকিলাব যুব সংগঠন – সীরাত কুইজ ২০২৬ইং ফলাফল">
+  <meta property="og:description" content="রোল নাম্বার ও শিক্ষাপ্রতিষ্ঠানের নাম দিয়ে আপনার রেজাল্ট দেখুন।">
+  <meta property="og:image" content="https://YOUR-DOMAIN.example/assets/og-share.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="450">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ইনকিলাব যুব সংগঠন – সীরাত কুইজ ২০২৬ইং ফলাফল">
+  <meta name="twitter:description" content="রোল নাম্বার ও শিক্ষাপ্রতিষ্ঠানের নাম দিয়ে আপনার রেজাল্ট দেখুন।">
+  <meta name="twitter:image" content="https://YOUR-DOMAIN.example/assets/og-share.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700&family=Hind+Siliguri:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <link rel="stylesheet" href="assets/css/header.css?v=3">
+  <link rel="stylesheet" href="assets/css/slider.css?v=2">
+  <style>
+    :root {
+      --primary: #047857;
+      --primary-dark: #064e3b;
+      --primary-light: #10b981;
+      --primary-subtle: #ecfdf5;
+      --accent: #d97706;
+      --accent-light: #fef3c7;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #0f172a;
+      --text-muted: #475569;
+      --border: #e2e8f0;
+      --border-focus: #047857;
+      --danger: #dc2626;
+      --danger-subtle: #fef2f2;
+      --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+      --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.04);
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 16px;
+      --radius-full: 9999px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Noto Sans Bengali', 'Hind Siliguri', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .search-card-wrapper {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    /* ফুটার এডমিন লিংক (আগের ফ্লোটিং বাটনের বদলে) */
+    .footer-admin-link {
+      display: inline-block;
+      margin-left: 6px;
+      padding: 6px 10px;
+      font-family: inherit;
+      font-size: inherit;
+      color: #64748b;
+      background: none;
+      border: 0;
+      border-radius: 6px;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      cursor: pointer;
+    }
+
+    .footer-admin-link:hover {
+      color: var(--primary);
+    }
+
+    .footer-admin-link:focus-visible {
+      outline: 2px solid var(--primary);
+      outline-offset: 2px;
+    }
+
+    /* মেইন কন্টেন্ট */
+    .main-content {
+      padding: 20px 0 48px 0;
+    }
+
+    .search-card {
+      background: var(--card-bg);
+      border-radius: var(--radius-lg);
+      padding: 28px 24px;
+      box-shadow: var(--shadow-lg);
+      border: 1px solid var(--border);
+      text-align: center;
+    }
+
+    .search-card-title {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin-bottom: 6px;
+    }
+
+    .search-card-subtitle {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+      line-height: 1.7;
+    }
+
+    /* রোল নাম্বার ভুলে গেলে কী করবেন, তার ছোট নির্দেশনা */
+    .search-card-hint {
+      margin: -10px 0 22px;
+      padding: 8px 12px;
+      font-size: 0.84rem;
+      line-height: 1.6;
+      text-align: center;
+      color: #92400e;
+      background: #fffbeb;
+      border: 1px solid #fde68a;
+      border-radius: 8px;
+    }
+
+    .search-form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .form-group {
+      text-align: left;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #334155;
+      margin-bottom: 6px;
+    }
+
+    .form-group label .required {
+      color: var(--danger);
+      margin-left: 2px;
+    }
+
+    .form-input {
+      width: 100%;
+      height: 48px;
+      padding: 10px 16px;
+      font-size: 1.05rem;
+      font-family: inherit;
+      border: 2px solid var(--border);
+      border-radius: var(--radius-md);
+      background-color: #fdfdfd;
+      color: var(--text);
+      outline: none;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .form-input:focus {
+      border-color: var(--primary);
+      background-color: #ffffff;
+      box-shadow: 0 0 0 4px rgba(4, 120, 87, 0.12);
+    }
+
+    .btn-search {
+      background: linear-gradient(135deg, #047857 0%, #065f46 100%);
+      color: #ffffff;
+      border: none;
+      padding: 14px 24px;
+      border-radius: var(--radius-md);
+      font-family: inherit;
+      font-size: 1.1rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      box-shadow: 0 4px 10px rgba(4, 120, 87, 0.3);
+      transition: all 0.2s ease;
+      margin-top: 4px;
+    }
+
+    .btn-search:hover {
+      background: linear-gradient(135deg, #059669 0%, #047857 100%);
+      box-shadow: 0 6px 14px rgba(4, 120, 87, 0.4);
+      transform: translateY(-1px);
+    }
+
+    .btn-search:active {
+      transform: translateY(0);
+    }
+
+    .btn-search:disabled {
+      opacity: 0.65;
+      cursor: not-allowed;
+      transform: none;
+      box-shadow: none;
+    }
+
+    /* ২য় রাউন্ড সিলেকশন নোটিশ ব্যানার (ছবি ২ ও ৩ এর মতো) */
+    .round2-announcement {
+      margin-top: 24px;
+      margin-bottom: 0;
+      border-radius: 12px;
+      text-align: left;
+      animation: fadeInUp 0.4s ease;
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      box-shadow: 0 2px 8px rgba(16, 185, 129, 0.08);
+      overflow: hidden;
+    }
+
+    /* ৩য় ছবির মতো - যারা ২য় রাউন্ডে সিলেক্ট হবে তাদের ডিজাইন */
+    .round2-announcement.selected {
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      padding: 18px 22px;
+    }
+
+    .round2-selected-wrapper {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .round2-selected-icon {
+      flex-shrink: 0;
+      width: 22px;
+      height: 22px;
+      color: #16a34a;
+      margin-top: 2px;
+    }
+
+    .round2-selected-text {
+      color: #15803d;
+      font-size: 1.05rem;
+      font-weight: 500;
+      line-height: 1.65;
+      margin: 0;
+    }
+
+    /* ২য় ছবির মতো - যারা সিলেক্ট হবে না তাদের অনুপ্রেরণামূলক ডিজাইন */
+    .round2-announcement.not-selected {
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      padding: 22px 24px;
+    }
+
+    .not-selected-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .not-selected-header .inspiration-icon {
+      flex-shrink: 0;
+      width: 24px;
+      height: 24px;
+      color: #15803d;
+    }
+
+    .not-selected-title {
+      color: #166534;
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin: 0;
+      letter-spacing: -0.2px;
+    }
+
+    .not-selected-p1 {
+      color: #1f2937;
+      font-size: 1.0rem;
+      line-height: 1.7;
+      margin: 0 0 14px 0;
+      font-weight: 400;
+    }
+
+    .not-selected-p2 {
+      color: #111827;
+      font-size: 1.02rem;
+      line-height: 1.65;
+      margin: 0;
+      font-weight: 700;
+    }
+
+    /* রেজাল্ট কার্ড */
+    .result-card {
+      background: var(--card-bg);
+      border-radius: var(--radius-lg);
+      padding: 0;
+      margin-top: 24px;
+      box-shadow: var(--shadow-lg);
+      border: 1px solid var(--border);
+      overflow: hidden;
+      animation: fadeInUp 0.4s ease;
+    }
+
+    /* হেল্পলাইন ও সাপোর্ট কার্ড */
+    .helpline-card {
+      max-width: 720px;
+      margin: 16px auto 0;
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: var(--radius-lg);
+      padding: 16px 20px;
+      box-shadow: 0 4px 12px -2px rgba(15, 23, 42, 0.05), 0 2px 4px -2px rgba(15, 23, 42, 0.03);
+    }
+
+    .helpline-header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 12px;
+      text-align: center;
+    }
+
+    .helpline-header-icon {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: #ecfdf5;
+      color: var(--primary);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .helpline-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #1e293b;
+      margin: 0;
+    }
+
+    .helpline-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+
+    .helpline-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      background: #f8fafc;
+      border: 1.5px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 9px 12px;
+      transition: all 0.2s ease;
+    }
+
+    .helpline-item:hover {
+      border-color: #a7f3d0;
+      background: #f0fdf4;
+    }
+
+    .helpline-num-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+      min-width: 0;
+    }
+
+    .helpline-label {
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: #64748b;
+      line-height: 1.2;
+    }
+
+    .helpline-number {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #065f46;
+      letter-spacing: 0.4px;
+      line-height: 1.3;
+      white-space: nowrap;
+    }
+
+    .helpline-actions {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      flex-shrink: 0;
+    }
+
+    .btn-help-call {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      background: linear-gradient(135deg, #059669 0%, #047857 100%);
+      color: #ffffff;
+      padding: 6px 11px;
+      border-radius: 8px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      font-family: inherit;
+      text-decoration: none;
+      box-shadow: 0 2px 4px rgba(4, 120, 87, 0.2);
+      transition: all 0.15s ease;
+      white-space: nowrap;
+    }
+
+    .btn-help-call:hover {
+      background: linear-gradient(135deg, #047857 0%, #064e3b 100%);
+      box-shadow: 0 4px 8px rgba(4, 120, 87, 0.3);
+      transform: translateY(-1px);
+    }
+
+    .btn-help-copy {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      background: #ffffff;
+      border: 1.5px solid #cbd5e1;
+      color: #475569;
+      padding: 5px 9px;
+      border-radius: 8px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      font-family: inherit;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      white-space: nowrap;
+    }
+
+    .btn-help-copy:hover {
+      background: #ecfdf5;
+      border-color: #10b981;
+      color: #047857;
+    }
+
+    .btn-help-copy.copied {
+      background: #ecfdf5;
+      border-color: #059669;
+      color: #047857;
+      font-weight: 700;
+    }
+
+    @media (max-width: 600px) {
+      .helpline-card {
+        padding: 14px 12px;
+      }
+
+      .helpline-grid {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+
+      .helpline-item {
+        padding: 8px 10px;
+      }
+    }
+
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(16px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .result-header {
+      background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
+      border-bottom: 2px solid #a7f3d0;
+      padding: 16px 20px;
+      text-align: center;
+    }
+
+    .result-header h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #064e3b;
+      margin-bottom: 2px;
+    }
+
+    .result-header p {
+      font-size: 0.85rem;
+      color: #047857;
+    }
+
+    .result-body {
+      padding: 20px;
+    }
+
+    .result-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 0;
+      border-bottom: 1px dashed #f1f5f9;
+      gap: 12px;
+    }
+
+    .result-row:last-child {
+      border-bottom: none;
+    }
+
+    .result-label {
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      flex-shrink: 0;
+    }
+
+    .result-value {
+      font-size: 1.02rem;
+      font-weight: 600;
+      color: var(--text);
+      text-align: right;
+    }
+
+    .marks-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #ecfdf5;
+      color: #065f46;
+      border: 1.5px solid #a7f3d0;
+      font-weight: 700;
+      font-size: 1.15rem;
+      padding: 4px 16px;
+      border-radius: var(--radius-full);
+    }
+
+    /* ফলাফল: উত্তীর্ণ (সবুজ) / অনুত্তীর্ণ (লাল) */
+    .result-status {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1.05rem;
+      padding: 4px 18px;
+      border-radius: var(--radius-full);
+    }
+
+    .result-status.pass {
+      color: #027a16;
+      background-color: #ecfdf5;
+      border: 1.5px solid #a7f3d0;
+    }
+
+    .result-status.fail {
+      color: #dc2626;
+      background-color: #fef2f2;
+      border: 1.5px solid #fecaca;
+    }
+
+    /* প্রিন্ট আইকন (শুধু সিলেক্ট হওয়া শিক্ষার্থীর কার্ডে) */
+    .result-header {
+      position: relative;
+    }
+
+    .result-header.has-print-btn {
+      padding-left: 56px;
+      padding-right: 56px;
+    }
+
+    .btn-print-result {
+      position: absolute;
+      top: 50%;
+      right: 14px;
+      transform: translateY(-50%);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 38px;
+      height: 38px;
+      padding: 0;
+      color: var(--primary);
+      background: #ffffff;
+      border: 1.5px solid #a7f3d0;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background-color 0.2s ease, color 0.2s ease;
+    }
+
+    .btn-print-result:hover {
+      color: #ffffff;
+      background: var(--primary);
+    }
+
+    .btn-print-result:focus-visible {
+      outline: 3px solid #fbbf24;
+      outline-offset: 2px;
+    }
+
+    /* প্রিন্টের চিঠিপত্রের মাথা ও তারিখ: স্ক্রিনে লুকানো */
+    .print-letterhead,
+    .print-footer {
+      display: none;
+    }
+
+    @media print {
+      @page {
+        size: A4;
+        margin: 0;
+        /* মার্জিন ০ = ব্রাউজারের নিজস্ব হেডার/ফুটার (তারিখ, ফাইল পাথ, পাতা নম্বর) ছাপা হয় না */
+      }
+
+      html,
+      body {
+        margin: 0 !important;
+        background: #ffffff !important;
+      }
+
+      body {
+        padding: 14mm !important;
+        /* কাগজের কিনারা থেকে ফাঁকা */
+      }
+
+      /* কার্ডের বাইরের সবকিছু (হেডার, ব্যানার, সার্চ, হেল্পলাইন, ফুটার, ঘোষণা...) বাদ */
+      .print-hide,
+      .btn-print-result {
+        display: none !important;
+      }
+
+      .result-card {
+        margin: 0 !important;
+        border: 1.5px solid #94a3b8 !important;
+        box-shadow: none !important;
+        animation: none !important;
+        break-inside: avoid;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      .result-card .print-letterhead {
+        display: flex !important;
+        align-items: center;
+        gap: 14px;
+        padding: 16px 20px 12px;
+        border-bottom: 1px solid #cbd5e1;
+      }
+
+      .print-logo {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .print-org {
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: #064e3b;
+      }
+
+      .print-event {
+        font-size: 0.95rem;
+        font-weight: 600;
+        color: #047857;
+      }
+
+      .result-header.has-print-btn {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .result-card .print-footer {
+        display: block !important;
+        padding: 10px 20px 14px;
+        font-size: 0.82rem;
+        color: #475569;
+        text-align: center;
+        border-top: 1px dashed #cbd5e1;
+      }
+    }
+
+    .gender-badge {
+      display: inline-block;
+      padding: 2px 12px;
+      border-radius: var(--radius-full);
+      font-size: 0.88rem;
+      font-weight: 600;
+    }
+
+    .gender-badge.boy {
+      background-color: #eff6ff;
+      color: #1d4ed8;
+      border: 1px solid #bfdbfe;
+    }
+
+    .gender-badge.girl {
+      background-color: #fdf2f8;
+      color: #be185d;
+      border: 1px solid #fbcfe8;
+    }
+
+    /* এরর ও খালি অবস্থা */
+    .message-box {
+      margin-top: 24px;
+      padding: 20px;
+      border-radius: var(--radius-md);
+      text-align: center;
+      font-size: 0.95rem;
+      font-weight: 500;
+      animation: fadeInUp 0.3s ease;
+    }
+
+    .message-box.error {
+      background: var(--danger-subtle);
+      border: 1px solid #fecaca;
+      color: var(--danger);
+    }
+
+    .message-box.not-found {
+      background: #fefce8;
+      border: 1px solid #fef08a;
+      color: #854d0e;
+    }
+
+    .message-box svg {
+      display: block;
+      margin: 0 auto 10px;
+      width: 40px;
+      height: 40px;
+    }
+
+    /* স্পিনার */
+    .spinner-inline {
+      width: 20px;
+      height: 20px;
+      border: 3px solid rgba(255, 255, 255, 0.3);
+      border-top-color: #ffffff;
+      border-radius: 50%;
+      animation: spin 0.6s linear infinite;
+      display: inline-block;
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* এডমিন লগইন মডাল */
+    .login-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.6);
+      backdrop-filter: blur(4px);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .login-overlay.active {
+      display: flex;
+    }
+
+    .login-card {
+      background: #ffffff;
+      border-radius: var(--radius-lg);
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+      max-width: 400px;
+      width: 92%;
+      overflow: hidden;
+    }
+
+    .login-card-header {
+      background: linear-gradient(135deg, #064e3b 0%, #047857 100%);
+      color: #ffffff;
+      padding: 18px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .login-card-header h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+
+    .login-close-btn {
+      background: rgba(255, 255, 255, 0.2);
+      border: none;
+      color: #ffffff;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+
+    .login-close-btn:hover {
+      background: rgba(255, 255, 255, 0.35);
+    }
+
+    .login-card-body {
+      padding: 24px;
+    }
+
+    .login-error {
+      background: var(--danger-subtle);
+      border: 1px solid #fecaca;
+      color: var(--danger);
+      padding: 10px 14px;
+      border-radius: var(--radius-sm);
+      font-size: 0.9rem;
+      font-weight: 500;
+      margin-bottom: 16px;
+      display: none;
+    }
+
+    .btn-login {
+      width: 100%;
+      background: linear-gradient(135deg, #047857 0%, #065f46 100%);
+      color: #ffffff;
+      border: none;
+      padding: 12px 20px;
+      border-radius: var(--radius-md);
+      font-family: inherit;
+      font-size: 1.05rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      box-shadow: 0 4px 8px rgba(4, 120, 87, 0.25);
+      transition: all 0.2s ease;
+      margin-top: 8px;
+    }
+
+    .btn-login:hover {
+      background: linear-gradient(135deg, #059669 0%, #047857 100%);
+      box-shadow: 0 6px 12px rgba(4, 120, 87, 0.35);
+      transform: translateY(-1px);
+    }
+
+    .btn-login:disabled {
+      opacity: 0.65;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    /* ফুটার */
+    .site-footer {
+      text-align: center;
+      padding: 20px;
+      color: #94a3b8;
+      font-size: 0.82rem;
+    }
+
+    /* কাস্টম সার্চেবল প্রতিষ্ঠান কম্বোবক্স */
+    .custom-combobox-wrapper {
+      position: relative;
+      width: 100%;
+    }
+
+    .combobox-input-wrap {
+      position: relative;
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+
+    .combobox-input-wrap .form-input {
+      padding-right: 40px;
+      cursor: text;
+    }
+
+    .combobox-toggle-btn {
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 40px;
+      background: transparent;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #64748b;
+      cursor: pointer;
+      transition: transform 0.2s ease, color 0.2s ease;
+      padding: 0;
+      border-top-right-radius: var(--radius-md);
+      border-bottom-right-radius: var(--radius-md);
+    }
+
+    .combobox-toggle-btn:hover {
+      color: var(--primary);
+    }
+
+    .custom-combobox-wrapper.is-open {
+      z-index: 50;
+    }
+
+    .custom-combobox-wrapper.is-open .combobox-toggle-btn svg {
+      transform: rotate(180deg);
+    }
+
+    .combobox-dropdown {
+      position: absolute;
+      top: calc(100% + 4px);
+      left: 0;
+      right: 0;
+      max-height: 250px;
+      overflow-y: auto;
+      background: #ffffff;
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-md);
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.15), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+      z-index: 1050;
+      display: none;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .custom-combobox-wrapper.is-open .combobox-dropdown {
+      display: block;
+    }
+
+    .combobox-item {
+      padding: 10px 14px;
+      font-size: 0.95rem;
+      color: #1e293b;
+      cursor: pointer;
+      border-bottom: 1px solid #f1f5f9;
+      text-align: left;
+      transition: background 0.15s ease, color 0.15s ease;
+    }
+
+    .combobox-item:last-child {
+      border-bottom: none;
+    }
+
+    .combobox-item:hover,
+    .combobox-item.active {
+      background: #ecfdf5;
+      color: #047857;
+      font-weight: 600;
+    }
+
+    .combobox-empty {
+      padding: 14px;
+      text-align: center;
+      color: #94a3b8;
+      font-size: 0.88rem;
+    }
+
+    /* শিক্ষাপ্রতিষ্ঠান রেজাল্ট তালিকা ও কুইক সার্চ ব্যানার */
+    .institution-search-banner {
+      background: #ffffff;
+      border: 2px solid #a7f3d0;
+      border-radius: var(--radius-lg);
+      padding: 20px 22px;
+      margin-top: 24px;
+      box-shadow: var(--shadow-md);
+      animation: fadeInUp 0.4s ease;
+    }
+
+    .inst-prompt-text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #065f46;
+      margin-bottom: 14px;
+      text-align: center;
+      line-height: 1.5;
+    }
+
+    .inst-prompt-text svg {
+      flex-shrink: 0;
+      color: #059669;
+    }
+
+    .quick-roll-form {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .quick-roll-form .form-input {
+      flex: 1;
+      height: 48px;
+    }
+
+    .btn-quick-search {
+      margin-top: 0;
+      height: 48px;
+      padding: 0 22px;
+      white-space: nowrap;
+    }
+
+    #quick-result-display {
+      margin-top: 18px;
+    }
+
+    .institution-list-card {
+      background: #ffffff;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-lg);
+      margin-top: 20px;
+      overflow: hidden;
+      animation: fadeInUp 0.4s ease;
+    }
+
+    .institution-list-header {
+      background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
+      border-bottom: 2px solid #a7f3d0;
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .institution-list-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #064e3b;
+      margin: 0;
+    }
+
+    .institution-list-count {
+      background: #dcfce7;
+      color: #047857;
+      font-size: 0.9rem;
+      font-weight: 700;
+      padding: 4px 14px;
+      border-radius: var(--radius-full);
+      border: 1px solid #86efac;
+    }
+
+    .table-responsive {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      width: 100%;
+    }
+
+    .student-list-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.95rem;
+    }
+
+    .student-list-table th {
+      background: #f8fafc;
+      color: #475569;
+      font-weight: 700;
+      padding: 12px 16px;
+      border-bottom: 1.5px solid #e2e8f0;
+      white-space: nowrap;
+    }
+
+    .student-list-table td {
+      padding: 12px 16px;
+      border-bottom: 1px solid #f1f5f9;
+      color: var(--text);
+      vertical-align: middle;
+    }
+
+    .student-list-table tbody tr:hover {
+      background: #f0fdf4;
+    }
+
+    .roll-badge-clickable {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4px 10px;
+      background: #f1f5f9;
+      border: 1.5px solid #cbd5e1;
+      border-radius: 8px;
+      font-weight: 700;
+      color: #0f172a;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      font-size: 0.95rem;
+    }
+
+    .roll-badge-clickable:hover {
+      background: #ecfdf5;
+      border-color: #047857;
+      color: #047857;
+      transform: scale(1.05);
+    }
+
+
+    @media (max-width: 640px) {
+      .main-content {
+        padding: 12px 0 28px 0;
+      }
+
+      .search-card {
+        padding: 14px 14px 16px;
+      }
+
+      .search-card-title {
+        font-size: 1.05rem;
+        margin-bottom: 2px;
+      }
+
+      .search-card-subtitle {
+        font-size: 0.82rem;
+        line-height: 1.55;
+        margin-bottom: 12px;
+      }
+
+      .search-card-hint {
+        margin: 0 0 10px;
+        padding: 4px 8px;
+        font-size: 0.74rem;
+        line-height: 1.45;
+      }
+
+      .search-card-subtitle:has(+ .search-card-hint) {
+        margin-bottom: 6px;
+      }
+
+      .search-form {
+        gap: 10px;
+      }
+
+      .form-group label {
+        font-size: 0.9rem;
+        margin-bottom: 4px;
+      }
+
+      .form-input {
+        height: 44px;
+        font-size: 1rem;
+      }
+
+      .btn-search {
+        min-height: 44px;
+        padding: 10px 20px;
+        font-size: 1.05rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <noscript>
+    <div
+      style="padding:16px;margin:16px;background:#fef3c7;color:#92400e;border-radius:8px;font-family:sans-serif;text-align:center;">
+      ফলাফল দেখতে আপনার ব্রাউজারে জাভাস্ক্রিপ্ট চালু করুন।
+    </div>
+  </noscript>
+  <!-- হেডার -->
+  <header class="site-header" id="siteHeader">
+    <div class="container container--tight header-bar">
+      <div class="header-logo-area">
+        <img
+          src="data:image/jpeg;base64,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"
+          alt="ইনকিলাব যুব সংগঠন লোগো" class="site-logo" width="70" height="70">
+      </div>
+      <div class="header-brand">
+        <h1 class="org-title">ইনকিলাব যুব সংগঠন</h1>
+        <span class="event-badge">সীরাত কুইজ - ২০২৬ইং</span>
+      </div>
+      <!-- হেডার হেল্পলাইন (সরাসরি ডায়ালযোগ্য) -->
+      <div class="header-helpline-area" aria-label="জরুরি হেল্পলাইন">
+        <div class="header-helpline-head">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+            </path>
+          </svg>
+          <span>হেল্পলাইন</span>
+        </div>
+        <div class="header-helpline-numbers">
+          <a href="tel:+8801943421232" class="header-helpline-link" title="কল করতে ট্যাপ করুন">০১৯৪৩ ৪২১২৩২</a>
+          <a href="tel:+8801617052410" class="header-helpline-link" title="কল করতে ট্যাপ করুন">০১৬১৭ ০৫২৪১০</a>
+        </div>
+      </div>
+      <div class="header-qr-area">
+        <a href="https://www.facebook.com/profile.php?id=61566432706839" target="_blank" rel="noopener noreferrer"
+          class="qr-link" title="আমাদের অফিসিয়াল ফেসবুক পেজ দেখুন"
+          aria-label="আমাদের অফিসিয়াল ফেসবুক পেজ দেখুন (নতুন ট্যাবে খুলবে)">
+          <span class="qr-card"><img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXIAAAFyAQAAAADAX2ykAAAB+0lEQVR42u2by43DMAxEiXUBKsmtu6QUYEBxaA5FGXvJaXeE0cEwHJ7yQHL4kfWvzmGyl73s/5P9y+Ls1wd/XN+27p/60XrH79tl/2PfHdn/rb05Sz833xtjO4H7QzqZiy8nX6d6sTQL0s4y/ffzQ3zT/8nNt/ivvwVu8V2CrwM9n5DFd5H8i7cb8n49bvrKv9R8Uz+/tv7rQ/qZme847qGtT5G6zfWU/k/S/GsIyBmak/SojsWX0X/dTQOth+uI2Q2QLeW0+FLy9VrXY7G77qSa08Wb/JdWX90J935AUx/w32IivpT6amTYUQmjCO7oZCk+c9e/aG14VzJy8gO8+LLq5zEmwtvU6ejKv+T6KgreCNeIypBbqo8WyL9joBDlUowWgr70FW//KhQU3LTM9y0qYelnZv+NMf6JMPxoUhqGDOJL2r+y2nqGYM4mFoSX+LLm35azhCKnt16jt/jy1r/RqwolPVy3SGfpK+L6d8eQYSxhPYf8is/M/asXInAH0OCLIYP0Mzff7Dq3EzOHXK0z5d9V9jeKw5rV1ob8l3//atpvD0E1xkny3wX2J+v8qPiv+s/L3F/IhvNAa5r/rrLfjllgzn/bWUzEl/5+yrh61PGGxSzF5xXuD2an8kAmLpcYxJf6/oJh0jAPlnJTVnyp61/df5e97Kns3wY+eP/V9Nq8AAAAAElFTkSuQmCC"
+              alt="" class="qr-image" width="60" height="60"></span>
+          <span class="qr-label">
+            আমাদের পেজ
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ফটো স্লাইডার ব্যানার -->
+  <section class="slider-section container container--tight" aria-label="ফটো গ্যালারি">
+    <div class="slider" data-slider role="region" aria-roledescription="carousel" aria-label="ফটো স্লাইডার"
+      tabindex="0">
+      <div class="slider-stage">
+        <figure class="slide" data-caption="বিগত বছর · ১ম পুরস্কার" style="--focus: 72% 72%">
+          <img src="assets/prize-1.webp" alt="" width="1200" height="450" loading="eager" fetchpriority="high"
+            decoding="async">
+        </figure>
+        <figure class="slide" data-caption="বিগত বছর · ২য় পুরস্কার" style="--focus: 30% 85%">
+          <img src="assets/prize-2.webp" alt="" width="1200" height="435" loading="lazy" decoding="async">
+        </figure>
+        <figure class="slide" data-caption="বিগত বছর · ৩য় পুরস্কার" style="--focus: 55% 75%">
+          <img src="assets/prize-3.webp" alt="" width="1200" height="397" loading="lazy" decoding="async">
+        </figure>
+        <figure class="slide" data-caption="বিগত বছর · ২য় রাউন্ড" style="--focus: 50% 50%">
+          <img src="assets/round-2.webp" alt="" width="1200" height="460" loading="lazy" decoding="async">
+        </figure>
+        <figure class="slide" data-caption="সীরাত কুইজের মুহূর্ত" style="--focus: 50% 40%">
+          <img src="assets/quiz.webp" alt="" width="1200" height="539" loading="lazy" decoding="async">
+        </figure>
+        <figure class="slide" data-caption="কুইজ সংগ্রহে শিক্ষার্থীদের উদ্দীপনা" style="--focus: 50% 38%">
+          <img src="assets/quiz-distribution.webp" alt="কুইজ সংগ্রহে শিক্ষার্থীদের উদ্দীপনা" width="1200" height="730"
+            loading="lazy" decoding="async">
+        </figure>
+        <figure class="slide" data-caption="ঈদ সামগ্রী বিতরণ · ২০২৫" style="--focus: 50% 50%">
+          <img src="assets/eid-gift.webp" alt="ঈদ সামগ্রী বিতরণ · ২০২৫" width="1200" height="622" loading="lazy"
+            decoding="async">
+        </figure>
+        <figure class="slide" data-caption="আমানতের ভার নিয়ে, তা পূরণে ছুটে চলা" style="--focus: 45% 35%">
+          <img src="assets/amanot.webp" alt="আমানতের ভার নিয়ে, তা পূরণে ছুটে চলা" width="1200" height="931"
+            loading="lazy" decoding="async">
+        </figure>
+        <figure class="slide fit-contain" data-caption="বন্যার্তদের আর্থিক উপহার" style="--focus: 50% 50%">
+          <img src="assets/help.webp" alt="" width="1600" height="588" loading="lazy" decoding="async">
+        </figure>
+        <div class="slider-shade" aria-hidden="true"></div>
+        <button type="button" class="slider-arrow prev" aria-label="পূর্ববর্তী ছবি">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+        <button type="button" class="slider-arrow next" aria-label="পরবর্তী ছবি">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+      </div>
+      <div class="slider-footer">
+        <span class="slider-caption" aria-live="off">বিগত বছর · ১ম পুরস্কার</span>
+        <div class="slider-dots" aria-label="ছবি নির্বাচন"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- মেইন কন্টেন্ট -->
+  <main class="main-content">
+    <div class="container container--tight">
+      <div class="search-card-wrapper">
+        <div class="search-card">
+          <h2 class="search-card-title">প্রতিযোগিতার ফলাফল দেখুন</h2>
+          <p class="search-card-subtitle">
+            রেজাল্ট দেখতে আপনার শিক্ষাপ্রতিষ্ঠান নির্বাচন করুন এবং রোল নাম্বার দিয়ে সার্চ বাটনে ক্লিক করুন
+          </p>
+          <p class="search-card-hint">
+            রোল নাম্বার ভুলে গেলে বা হারিয়ে গেলে শুধু শিক্ষাপ্রতিষ্ঠানের নাম দিয়ে সার্চ করে লিস্ট থেকে আপনার রোল
+            নাম্বার খুঁজে আবার সার্চ করুন
+          </p>
+
+          <form id="student-search-form" class="search-form" novalidate>
+            <div class="form-group">
+              <label for="student-roll">রোল নাম্বার</label>
+              <input type="text" id="student-roll" class="form-input" placeholder="আপনার রোল নাম্বার লিখুন (যেমন: ১২৬)"
+                autocomplete="off">
+            </div>
+
+            <div class="form-group">
+              <label for="student-institution">শিক্ষাপ্রতিষ্ঠানের নাম <span class="required">*</span></label>
+              <div class="custom-combobox-wrapper" id="student-institution-combobox">
+                <div class="combobox-input-wrap">
+                  <input type="text" id="student-institution" class="form-input"
+                    placeholder="শিক্ষাপ্রতিষ্ঠানের নাম লিখুন বা বাছাই করুন" required autocomplete="off">
+                  <button type="button" class="combobox-toggle-btn" id="student-institution-toggle"
+                    aria-label="ড্রপডাউন খুলুন" title="সব প্রতিষ্ঠান দেখুন">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </button>
+                </div>
+                <div class="combobox-dropdown" id="student-institution-dropdown" style="display: none;"></div>
+              </div>
+              <datalist id="institution-options" style="display: none;"></datalist>
+            </div>
+
+            <button type="submit" id="btn-search-result" class="btn-search">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+              সার্চ করুন
+            </button>
+          </form>
+        </div>
+
+        <!-- রেজাল্ট এরিয়া -->
+        <div id="result-area"></div>
+
+        <!-- হেল্পলাইন ও যোগাযোগ সেকশন -->
+        <div class="helpline-card" aria-label="জরুরি যোগাযোগ">
+          <div class="helpline-header">
+            <div class="helpline-header-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                </path>
+              </svg>
+            </div>
+            <h3 class="helpline-title">যেকোনো তথ্যের জন্য যোগাযোগ করুন</h3>
+          </div>
+
+          <div class="helpline-grid">
+            <!-- ১ম হটলাইন -->
+            <div class="helpline-item">
+              <div class="helpline-num-wrap">
+                <span class="helpline-label">হেল্পলাইন ০১</span>
+                <span class="helpline-number">০১৯৪৩ ৪২১২৩২</span>
+              </div>
+              <div class="helpline-actions">
+                <a href="tel:+8801943421232" class="btn-help-call" title="সরাসরি কল করুন">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                    </path>
+                  </svg>
+                  কল
+                </a>
+                <button type="button" class="btn-help-copy" onclick="copyHelpline('০১৯৪৩৪২১২৩২', this)"
+                  title="নাম্বার কপি করুন">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                  <span class="copy-text">কপি</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- ২য় হটলাইন -->
+            <div class="helpline-item">
+              <div class="helpline-num-wrap">
+                <span class="helpline-label">হেল্পলাইন ০২</span>
+                <span class="helpline-number">০১৬১৭ ০৫২৪১০</span>
+              </div>
+              <div class="helpline-actions">
+                <a href="tel:+8801617052410" class="btn-help-call" title="সরাসরি কল করুন">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                    </path>
+                  </svg>
+                  কল
+                </a>
+                <button type="button" class="btn-help-copy" onclick="copyHelpline('০১৬১৭০৫২৪১০', this)"
+                  title="নাম্বার কপি করুন">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                  <span class="copy-text">কপি</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    ইনকিলাব যুব সংগঠন কর্তৃক প্রকাশিত | সর্বস্বত্ব সংরক্ষিত
+    <button type="button" id="btn-admin-login-trigger" class="footer-admin-link"
+      title="এডমিন প্যানেলে লগইন করুন">এডমিন</button>
+  </footer>
+
+  <!-- এডমিন লগইন মডাল -->
+  <div id="login-overlay" class="login-overlay">
+    <div class="login-card">
+      <div class="login-card-header">
+        <h2>🔐 এডমিন লগইন</h2>
+        <button type="button" id="login-close-btn" class="login-close-btn" aria-label="বন্ধ করুন">✕</button>
+      </div>
+      <div class="login-card-body">
+        <div id="login-error" class="login-error"></div>
+        <form id="admin-login-form" novalidate>
+          <div class="form-group">
+            <label for="admin-password">পাসওয়ার্ড <span class="required">*</span></label>
+            <input type="password" id="admin-password" class="form-input" placeholder="এডমিন পাসওয়ার্ড লিখুন" required
+              autocomplete="current-password">
+          </div>
+          <button type="submit" id="btn-admin-login" class="btn-login">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+              <polyline points="10 17 15 12 10 7"></polyline>
+              <line x1="15" y1="12" x2="3" y2="12"></line>
+            </svg>
+            লগইন করুন
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/slider.js?v=1" defer></script>
+  <script>
+    // কনফিগারেশন
+    const SUPABASE_URL = "https://xyzgzcugaqtvmxdxdald.supabase.co";
+    const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inh5emd6Y3VnYXF0dm14ZHhkYWxkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIwNDY5NjEsImV4cCI6MjEwNzYyMjk2MX0.wzjX72bKxz-ggchtrGzK7mm7urB7zj2-NHAq5N68SpQ";
+
+    let supabaseClient = null;
+    let allInstitutions = [];
+
+    // ২য় রাউন্ড কাট-অফ মান
+    let round2Cutoffs = {
+      boys: null,
+      girls: null
+    };
+
+    // ২য় রাউন্ড কাট-অফ লোড: সরাসরি ডাটাবেজ (quiz_settings টেবিল) থেকে লোড হবে
+    async function loadRound2Cutoffs() {
+      if (supabaseClient) {
+        try {
+          const { data, error } = await supabaseClient
+            .from('quiz_settings')
+            .select('key, value');
+
+          if (!error && data && data.length > 0) {
+            data.forEach(item => {
+              if (item.key === 'round2_cutoff_boys' && item.value !== '') {
+                round2Cutoffs.boys = parseFloat(item.value);
+                localStorage.setItem("quiz_round2_cutoff_boys", item.value);
+              }
+              if (item.key === 'round2_cutoff_girls' && item.value !== '') {
+                round2Cutoffs.girls = parseFloat(item.value);
+                localStorage.setItem("quiz_round2_cutoff_girls", item.value);
+              }
+            });
+            return;
+          }
+        } catch (e) {
+          // ignore database load error and try local fallbacks
+        }
+      }
+
+      // ফলব্যাক ১: লোকাল স্টোরেজ
+      const localBoys = localStorage.getItem("quiz_round2_cutoff_boys");
+      const localGirls = localStorage.getItem("quiz_round2_cutoff_girls");
+      if (localBoys !== null && localBoys !== "") round2Cutoffs.boys = parseFloat(localBoys);
+      if (localGirls !== null && localGirls !== "") round2Cutoffs.girls = parseFloat(localGirls);
+
+      // ফলব্যাক ২: assets/round2_config.json
+      if (round2Cutoffs.boys === null || round2Cutoffs.girls === null) {
+        try {
+          const res = await fetch("assets/round2_config.json?v=" + Date.now());
+          if (res.ok) {
+            const json = await res.json();
+            if (round2Cutoffs.boys === null && json.boys !== undefined && json.boys !== null) {
+              round2Cutoffs.boys = parseFloat(json.boys);
+            }
+            if (round2Cutoffs.girls === null && json.girls !== undefined && json.girls !== null) {
+              round2Cutoffs.girls = parseFloat(json.girls);
+            }
+          }
+        } catch (e) {
+          // ignore network error
+        }
+      }
+    }
+
+    // ডাটাবেজের কাট-অফ রিয়েলটাইমে পরিবর্তনের লিসেনার
+    function setupCutoffRealtimeSubscription() {
+      if (!supabaseClient) return;
+      try {
+        supabaseClient
+          .channel('quiz_settings_realtime_student')
+          .on('postgres_changes', { event: '*', schema: 'public', table: 'quiz_settings' }, payload => {
+            if (payload.new && payload.new.key) {
+              if (payload.new.key === 'round2_cutoff_boys' && payload.new.value !== '') {
+                round2Cutoffs.boys = parseFloat(payload.new.value);
+                localStorage.setItem("quiz_round2_cutoff_boys", payload.new.value);
+              } else if (payload.new.key === 'round2_cutoff_girls' && payload.new.value !== '') {
+                round2Cutoffs.girls = parseFloat(payload.new.value);
+                localStorage.setItem("quiz_round2_cutoff_girls", payload.new.value);
+              }
+            }
+          })
+          .subscribe();
+      } catch (e) {
+        console.warn("Realtime cutoff listener error:", e);
+      }
+    }
+
+    // হেল্পার ফাংশন
+    function toBnDigits(val) {
+      if (val === null || val === undefined) return '';
+      const bnMap = ['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'];
+      return String(val).replace(/[0-9]/g, d => bnMap[d]);
+    }
+
+    function toEnDigits(val) {
+      if (val === null || val === undefined) return '';
+      const enMap = {
+        '০': '0', '১': '1', '২': '2', '৩': '3', '৪': '4',
+        '৫': '5', '৬': '6', '৭': '7', '৮': '8', '৯': '9'
+      };
+      return String(val).replace(/[০-৯]/g, d => enMap[d]);
+    }
+
+    function escapeHtml(str) {
+      if (str === null || str === undefined) return '';
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+    }
+
+
+    // -------------------------------------------------------------
+    // ইনিশিয়ালাইজেশন
+    async function init() {
+      if (!SUPABASE_URL || !SUPABASE_KEY ||
+        SUPABASE_URL === "YOUR_SUPABASE_URL" ||
+        SUPABASE_KEY === "YOUR_SUPABASE_ANON_KEY") {
+        console.warn("Supabase credentials not configured.");
+        await loadRound2Cutoffs();
+        return;
+      }
+
+      try {
+        if (window.supabase && typeof window.supabase.createClient === "function") {
+          supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+          // ডাটাবেজ থেকে সরাসরি কাট-অফ মান লোড ও রিয়েলটাইম লিসেনার চালু
+          await loadRound2Cutoffs();
+          setupCutoffRealtimeSubscription();
+          await loadInstitutions();
+        } else {
+          await loadRound2Cutoffs();
+        }
+      } catch (e) {
+        console.error("সুপাবেজ সংযোগ ব্যর্থ:", e);
+        await loadRound2Cutoffs();
+      }
+    }
+
+    const studentInstitutionInput = document.getElementById("student-institution");
+    const studentInstitutionCombobox = document.getElementById("student-institution-combobox");
+    const studentInstitutionDropdown = document.getElementById("student-institution-dropdown");
+    const studentInstitutionToggle = document.getElementById("student-institution-toggle");
+    let currentInstitutionStudents = [];
+
+    async function loadInstitutions() {
+      if (!supabaseClient) return;
+      try {
+        let allData = [];
+        let from = 0;
+        const PAGE_SIZE = 1000;
+        let hasMore = true;
+
+        while (hasMore) {
+          const { data, error } = await supabaseClient
+            .from('quiz_results')
+            .select('institution')
+            .range(from, from + PAGE_SIZE - 1);
+
+          if (error) throw error;
+          if (data && data.length > 0) {
+            allData = allData.concat(data);
+            if (data.length < PAGE_SIZE) hasMore = false;
+            else from += PAGE_SIZE;
+          } else {
+            hasMore = false;
+          }
+        }
+
+        const instSet = new Set();
+        allData.forEach(item => {
+          if (item.institution && item.institution.trim()) {
+            instSet.add(item.institution.trim());
+          }
+        });
+
+        allInstitutions = Array.from(instSet).sort((a, b) => a.localeCompare(b, "bn"));
+
+        const datalist = document.getElementById("institution-options");
+        if (datalist) {
+          datalist.innerHTML = allInstitutions
+            .map(inst => `<option value="${escapeHtml(inst)}"></option>`)
+            .join("");
+        }
+
+        renderInstitutionDropdown(allInstitutions);
+      } catch (err) {
+        console.error("প্রতিষ্ঠান তালিকা লোড ত্রুটি:", err);
+      }
+    }
+
+    function renderInstitutionDropdown(list, filterText = "") {
+      if (!studentInstitutionDropdown) return;
+      const cleanFilter = filterText.trim().toLowerCase();
+      const filtered = list.filter(inst =>
+        !cleanFilter || inst.toLowerCase().includes(cleanFilter)
+      );
+
+      if (filtered.length === 0) {
+        studentInstitutionDropdown.innerHTML = `<div class="combobox-empty">কোনো প্রতিষ্ঠান মেলেনি</div>`;
+        return;
+      }
+
+      studentInstitutionDropdown.innerHTML = filtered
+        .map(inst => {
+          const isSelected = studentInstitutionInput && studentInstitutionInput.value.trim().toLowerCase() === inst.toLowerCase();
+          return `<div class="combobox-item ${isSelected ? 'active' : ''}" data-value="${escapeHtml(inst)}">${escapeHtml(inst)}</div>`;
+        })
+        .join("");
+    }
+
+    function toggleStudentInstitutionCombobox(forceOpen = null) {
+      if (!studentInstitutionCombobox || !studentInstitutionDropdown) return;
+      const isOpen = studentInstitutionCombobox.classList.contains("is-open");
+      const shouldOpen = (forceOpen !== null) ? forceOpen : !isOpen;
+      if (shouldOpen) {
+        renderInstitutionDropdown(allInstitutions, studentInstitutionInput ? studentInstitutionInput.value : "");
+        studentInstitutionCombobox.classList.add("is-open");
+        studentInstitutionDropdown.style.display = "block";
+      } else {
+        studentInstitutionCombobox.classList.remove("is-open");
+        studentInstitutionDropdown.style.display = "none";
+      }
+    }
+
+    if (studentInstitutionToggle) {
+      studentInstitutionToggle.addEventListener("click", (e) => {
+        e.stopPropagation();
+        toggleStudentInstitutionCombobox();
+      });
+    }
+
+    if (studentInstitutionInput) {
+      studentInstitutionInput.addEventListener("focus", () => {
+        toggleStudentInstitutionCombobox(true);
+      });
+      studentInstitutionInput.addEventListener("click", () => {
+        toggleStudentInstitutionCombobox(true);
+      });
+      studentInstitutionInput.addEventListener("input", () => {
+        renderInstitutionDropdown(allInstitutions, studentInstitutionInput.value);
+        toggleStudentInstitutionCombobox(true);
+      });
+    }
+
+    if (studentInstitutionDropdown) {
+      studentInstitutionDropdown.addEventListener("click", (e) => {
+        const item = e.target.closest(".combobox-item");
+        if (item) {
+          const val = item.getAttribute("data-value") || "";
+          if (studentInstitutionInput) studentInstitutionInput.value = val;
+          toggleStudentInstitutionCombobox(false);
+        }
+      });
+    }
+
+    document.addEventListener("click", (e) => {
+      if (studentInstitutionCombobox && !studentInstitutionCombobox.contains(e.target)) {
+        toggleStudentInstitutionCombobox(false);
+      }
+    });
+
+    // রেজাল্ট সার্চ
+    const searchForm = document.getElementById("student-search-form");
+    const resultArea = document.getElementById("result-area");
+    const btnSearch = document.getElementById("btn-search-result");
+
+    searchForm.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      toggleStudentInstitutionCombobox(false);
+      resultArea.innerHTML = "";
+      await loadRound2Cutoffs();
+
+      const rollRaw = document.getElementById("student-roll").value.trim();
+      const institutionRaw = document.getElementById("student-institution").value.trim();
+
+      // এক. শিক্ষাপ্রতিষ্ঠান দিয়ে সার্চ বাধ্যতামূলক
+      if (!institutionRaw) {
+        showMessage("অনুগ্রহ করে শিক্ষাপ্রতিষ্ঠানের নাম লিখুন বা ড্রপডাউন থেকে বাছাই করুন।", "error");
+        const instInput = document.getElementById("student-institution");
+        if (instInput) {
+          instInput.focus();
+          instInput.scrollIntoView({ behavior: "smooth", block: "center" });
+        }
+        return;
+      }
+
+      if (!supabaseClient) {
+        showMessage("সার্ভারের সাথে সংযোগ স্থাপন করা যায়নি। পেজটি রিফ্রেশ করে আবার চেষ্টা করুন।", "error");
+        return;
+      }
+
+      // বাটন লোডিং
+      btnSearch.disabled = true;
+      btnSearch.innerHTML = '<span class="spinner-inline"></span> খোঁজা হচ্ছে...';
+
+      try {
+        // ১. শুধুমাত্র শিক্ষাপ্রতিষ্ঠান লিখে সার্চ দিলে:
+        // প্রতিষ্ঠানের সকল শিক্ষার্থীর তালিকা (প্রাপ্ত নাম্বার ও মোবাইল ছাড়া)
+        if (!rollRaw) {
+          let allInstData = [];
+          let from = 0;
+          const PAGE_SIZE = 1000;
+          let hasMore = true;
+
+          while (hasMore) {
+            const { data, error } = await supabaseClient
+              .from('quiz_results')
+              .select('roll, name, institution')
+              .ilike('institution', `%${institutionRaw.trim()}%`)
+              .range(from, from + PAGE_SIZE - 1);
+
+            if (error) throw error;
+            if (data && data.length > 0) {
+              allInstData = allInstData.concat(data);
+              if (data.length < PAGE_SIZE) hasMore = false;
+              else from += PAGE_SIZE;
+            } else {
+              hasMore = false;
+            }
+          }
+
+          if (allInstData.length === 0) {
+            showMessage(
+              `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="8" y1="12" x2="16" y2="12"></line>
+              </svg>
+              <strong>কোনো শিক্ষার্থী পাওয়া যায়নি</strong><br>
+              "${escapeHtml(institutionRaw)}" নামের কোনো শিক্ষাপ্রতিষ্ঠানের ফলাফল পাওয়া যায়নি। ড্রপডাউন থেকে সঠিক নাম বেছে নিন।`,
+              "not-found"
+            );
+          } else {
+            // রোল অনুসারে সাজানো
+            allInstData.sort((a, b) => {
+              const rA = parseInt(toEnDigits(a.roll), 10) || 0;
+              const rB = parseInt(toEnDigits(b.roll), 10) || 0;
+              if (rA !== rB) return rA - rB;
+              return (a.name || '').localeCompare((b.name || ''), "bn");
+            });
+
+            currentInstitutionStudents = allInstData;
+            const primaryInstName = allInstData[0].institution || institutionRaw;
+            showInstitutionStudentsList(primaryInstName, allInstData);
+          }
+          return;
+        }
+
+        // ২. শিক্ষাপ্রতিষ্ঠান + রোল উভয় দিলে: সরাসরি শিক্ষার্থীর ফলাফল প্রদর্শন
+        const { data, error } = await supabaseClient.rpc('get_student_result', {
+          p_roll: rollRaw,
+          p_institution: institutionRaw.trim()
+        });
+
+        if (error) throw error;
+
+        // রোল (বাংলা/ইংরেজি অঙ্ক) ও প্রতিষ্ঠান মেলানো সার্ভারেই হয়; সিলেক্ট না হলে marks = null
+        const matched = data || [];
+
+        if (matched.length === 0) {
+          showMessage(
+            `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="8" y1="12" x2="16" y2="12"></line>
+            </svg>
+            <strong>কোনো ফলাফল পাওয়া যায়নি</strong><br>
+            "${escapeHtml(institutionRaw)}" প্রতিষ্ঠানে "${escapeHtml(rollRaw)}" রোল নাম্বারের কোনো শিক্ষার্থী মেলেনি। সঠিক রোল নাম্বার দিয়ে আবার চেষ্টা করুন।`,
+            "not-found"
+          );
+        } else {
+          matched.forEach(student => {
+            resultArea.innerHTML += generateStudentResultHtml(student);
+          });
+          resultArea.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      } catch (err) {
+        console.error("সার্চ ত্রুটি:", err);
+        showMessage("সার্ভারের সাথে যোগাযোগে সমস্যা হয়েছে। অনুগ্রহ করে আবার চেষ্টা করুন।", "error");
+      } finally {
+        btnSearch.disabled = false;
+        btnSearch.innerHTML = `
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          সার্চ করুন`;
+      }
+    });
+
+    /**
+     * প্রতিষ্ঠানের সকল শিক্ষার্থীর তালিকা প্রদর্শন (অ্যাকশন কলাম ছাড়া ও নিচের সার্চ ছাড়া)
+     */
+    function showInstitutionStudentsList(institutionName, students) {
+      let rowsHtml = "";
+      students.forEach((s, idx) => {
+        const serialBn = toBnDigits(idx + 1);
+        const rollBn = toBnDigits(s.roll);
+
+        rowsHtml += `
+          <tr>
+            <td>${serialBn}</td>
+            <td>
+              <button type="button" class="roll-badge-clickable" onclick="selectStudentRoll('${escapeHtml(s.roll)}')" title="এই রোলটি নির্বাচন করে উপরে বসাতে ক্লিক করুন">
+                ${escapeHtml(rollBn)}
+              </button>
+            </td>
+            <td><strong>${escapeHtml(s.name)}</strong></td>
+          </tr>
+        `;
+      });
+
+      resultArea.innerHTML = `
+        <!-- নির্দেশনা ব্যানার (শুধু লিখা থাকবে) -->
+        <div class="institution-search-banner" id="inst-search-banner">
+          <div class="inst-prompt-text" style="margin-bottom: 0;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="16" x2="12" y2="12"></line>
+              <line x1="12" y1="8" x2="12.01" y2="8"></line>
+            </svg>
+            <span>রেজাল্ট দেখতে নিচে থেকে রোল নাম্বার খুঁজে রোল নাম্বার ঘরে আপনার রোলটি বসান।</span>
+          </div>
+        </div>
+
+        <!-- শিক্ষাপ্রতিষ্ঠানের সকল শিক্ষার্থী তালিকা -->
+        <div class="institution-list-card">
+          <div class="institution-list-header">
+            <h3 class="institution-list-title">${escapeHtml(institutionName)}</h3>
+            <span class="institution-list-count">মোট ${toBnDigits(students.length)} জন শিক্ষার্থী</span>
+          </div>
+          <div class="table-responsive">
+            <table class="student-list-table">
+              <thead>
+                <tr>
+                  <th scope="col" style="width: 80px;">সিরিয়াল নং</th>
+                  <th scope="col" style="width: 140px;">রোল</th>
+                  <th scope="col">নাম</th>
+                </tr>
+              </thead>
+              <tbody>
+                ${rowsHtml}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      `;
+
+      resultArea.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
+    /**
+     * তালিকা থেকে রোলে ক্লিক করলে উপরের সার্চ কার্ডের রোল ইনপুটে বসিয়ে ফোকাস করা
+     */
+    function selectStudentRoll(roll) {
+      const rollInput = document.getElementById("student-roll");
+      if (rollInput) {
+        rollInput.value = roll;
+        rollInput.focus();
+        rollInput.scrollIntoView({ behavior: "smooth", block: "center" });
+        rollInput.style.borderColor = "var(--primary)";
+        setTimeout(() => {
+          rollInput.style.borderColor = "";
+        }, 1500);
+      }
+    }
+
+    /**
+     * একক শিক্ষার্থীর রেজাল্ট কার্ড ও ২য় রাউন্ড সিলেকশন ব্যানার HTML তৈরি
+     */
+    function generateStudentResultHtml(student) {
+      const rollBn = toBnDigits(student.roll);
+      // সিলেক্ট হয়েছে কি না এবং প্রাপ্ত নাম্বার সার্ভার থেকেই আসে (সিলেক্ট না হলে সার্ভার নম্বর পাঠায়ই না)
+      const isSelected = student.selected === true;
+      const selectionUnknown = student.selected === null || student.selected === undefined;
+      const marksBn = (student.marks === null || student.marks === undefined) ? '' : toBnDigits(student.marks);
+
+      let round2Html = "";
+      if (isSelected) {
+        // ৩য় ছবির মতো - যারা সিলেক্ট হয়েছে তাদের নোটিশ
+        round2Html = `
+          <div class="round2-announcement selected" role="alert">
+            <div class="round2-selected-wrapper">
+              <svg class="round2-selected-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="9 12 11.5 14.5 15.5 9.5"></polyline>
+              </svg>
+              <p class="round2-selected-text">
+                অভিনন্দন! আপনি সীরাত কুইজের ২য় রাউন্ডে জায়গা করে নিয়েছেন। বিস্তারিত আপনাকে মেসেজের (SMS) মাধ্যমে জানানো হবে। তাই আপনার মেসেজ ইনবক্সে নিয়মিত খেয়াল রাখুন, যেন গুরুত্বপূর্ণ কোনো তথ্য মিস না হয়।
+              </p>
+            </div>
+          </div>
+        `;
+      } else if (selectionUnknown) {
+        // কাট-অফ এখনো ঠিক করা নেই / তথ্য নেই: কাউকে "সিলেক্ট হননি" বলা হবে না এবং প্রাপ্ত নাম্বারও দেখানো হবে না
+        round2Html = `
+          <div class="round2-announcement" role="status">
+            <p class="not-selected-p2" style="margin: 0;">২য় রাউন্ডের নির্বাচনী ফলাফল এখনো প্রকাশিত হয়নি।</p>
+          </div>
+        `;
+      } else {
+        // ২য় ছবির মতো - যারা সিলেক্ট হয়নি তাদের অনুপ্রেরণামূলক নোটিশ
+        round2Html = `
+          <div class="round2-announcement not-selected" role="alert">
+            <div class="not-selected-header">
+              <svg class="inspiration-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+              </svg>
+              <h3 class="not-selected-title">আপনার অংশগ্রহণই আমাদের অনুপ্রেরণা!</h3>
+            </div>
+            <p class="not-selected-p1">
+              সীরাত কুইজে অংশগ্রহণ করার জন্য আপনাকে আন্তরিক ধন্যবাদ। প্রিয় নবী হযরত মুহাম্মদ ﷺ-এর জীবনাদর্শ সম্পর্কে জানার এই আগ্রহ আপনার জ্ঞান ও জীবনকে আরও সমৃদ্ধ করুক। মনে রাখবেন, জ্ঞান অর্জনের প্রতিটি প্রচেষ্টাই মূল্যবান, আর শেখার প্রতিটি ধাপই নতুন সম্ভাবনার দ্বার খুলে দেয়। জ্ঞান অর্জনের এই পথচলা অব্যাহত থাকুক, আর অর্জিত শিক্ষা আপনার জীবনে সুন্দর পরিবর্তন নিয়ে আসুক।
+            </p>
+            <p class="not-selected-p2">
+              ইনশাআল্লাহ, সামনে আরও নতুন সুযোগ আসবে। নবীজি ﷺ-এর আদর্শ জানুন, শিখুন এবং জীবনে ধারণ করার চেষ্টা করুন। আল্লাহ আপনার জ্ঞানচর্চায় বরকত দান করুন। পরবর্তী আয়োজনে আবারও অংশগ্রহণ করবেন। আপনার জন্য রইল আন্তরিক শুভকামনা!
+            </p>
+          </div>
+        `;
+      }
+
+      // শুধুমাত্র সিলেক্ট হলেই শিক্ষার্থী প্রাপ্ত নম্বর দেখতে পারবে; নতুবা প্রাপ্ত নম্বর লুকানো থাকবে
+      const marksRowHtml = isSelected ? `
+        <div class="result-row">
+          <span class="result-label">প্রাপ্ত নাম্বার</span>
+          <span class="result-value"><span class="marks-badge">${marksBn}</span></span>
+        </div>
+      ` : '';
+
+      // ফলাফল: সিলেক্ট হলে উত্তীর্ণ, না হলে অনুত্তীর্ণ। কাট-অফ জানা না থাকলে কিছুই দেখানো হয় না।
+      const statusRowHtml = selectionUnknown ? '' : `
+            <div class="result-row result-status-row">
+              <span class="result-label">ফলাফল</span>
+              <span class="result-value"><span class="result-status ${isSelected ? 'pass' : 'fail'}">${isSelected ? 'উত্তীর্ণ' : 'অনুত্তীর্ণ'}</span></span>
+            </div>
+      `;
+
+      // শুধু সিলেক্ট হলেই প্রিন্ট আইকন ও প্রিন্টের চিঠিপত্রের মাথা (স্ক্রিনে লুকানো, শুধু প্রিন্টে দেখায়)
+      const logoEl = document.querySelector('.site-logo');
+      const printBtnHtml = isSelected ? `
+            <button type="button" class="btn-print-result" title="ফলাফল প্রিন্ট করুন" aria-label="ফলাফল প্রিন্ট করুন">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                <rect x="6" y="14" width="12" height="8"></rect>
+              </svg>
+            </button>
+      ` : '';
+      const printLetterheadHtml = isSelected ? `
+          <div class="print-letterhead" aria-hidden="true">
+            <img class="print-logo" alt="" src="${logoEl ? logoEl.src : ''}">
+            <div>
+              <div class="print-org">ইনকিলাব যুব সংগঠন</div>
+              <div class="print-event">সীরাত কুইজ - ২০২৬ইং</div>
+            </div>
+          </div>
+      ` : '';
+      const printFooterHtml = isSelected ? `
+          <div class="print-footer" aria-hidden="true">প্রিন্টের তারিখ: <span class="print-date"></span></div>
+      ` : '';
+
+      return `
+        ${round2Html}
+        <div class="result-card">
+          ${printLetterheadHtml}
+          <div class="result-header${isSelected ? ' has-print-btn' : ''}">
+            ${printBtnHtml}
+            <h2>${escapeHtml(student.institution)}</h2>
+            <p>সীরাত কুইজ - ২০২৬ইং প্রতিযোগিতার ফলাফল</p>
+          </div>
+          <div class="result-body">
+            <div class="result-row">
+              <span class="result-label">রোল নাম্বার</span>
+              <span class="result-value">${escapeHtml(rollBn)}</span>
+            </div>
+            <div class="result-row">
+              <span class="result-label">শিক্ষার্থীর নাম</span>
+              <span class="result-value">${escapeHtml(student.name)}</span>
+            </div>
+            ${marksRowHtml}
+            <div class="result-row">
+              <span class="result-label">শিক্ষাপ্রতিষ্ঠান</span>
+              <span class="result-value">${escapeHtml(student.institution)}</span>
+            </div>
+            ${statusRowHtml}
+          </div>
+          ${printFooterHtml}
+        </div>
+      `;
+    }
+
+    // -------------------------------------------------------------
+    // ফলাফল প্রিন্ট: প্রিন্ট আইকনে ক্লিক করলে সরাসরি ব্রাউজারের প্রিন্ট পেজ খোলে।
+    // শুধু ওই কার্ডটাই ছাপা হয়; পেজের বাকি সবকিছু প্রিন্টের সময় লুকানো থাকে।
+    // -------------------------------------------------------------
+    (function setupResultPrint() {
+      const SKIP_TAGS = new Set(['SCRIPT', 'STYLE', 'LINK', 'META', 'NOSCRIPT']);
+      let originalTitle = null;
+
+      function cleanupPrint() {
+        document.querySelectorAll('.print-hide').forEach((el) => el.classList.remove('print-hide'));
+        document.querySelectorAll('.result-card.print-target').forEach((el) => el.classList.remove('print-target'));
+        if (originalTitle !== null) {
+          document.title = originalTitle;
+          originalTitle = null;
+        }
+      }
+
+      function printResultCard(card) {
+        cleanupPrint();
+        card.classList.add('print-target');
+
+        // কার্ড থেকে <body> পর্যন্ত প্রতিটি স্তরের "ভাই-বোন" এলিমেন্ট প্রিন্টে লুকানো
+        let node = card;
+        while (node && node !== document.body) {
+          const parent = node.parentNode;
+          if (!parent) break;
+          Array.from(parent.children).forEach((sib) => {
+            if (sib !== node && !SKIP_TAGS.has(sib.tagName)) sib.classList.add('print-hide');
+          });
+          node = parent;
+        }
+
+        const dateEl = card.querySelector('.print-date');
+        if (dateEl) {
+          dateEl.textContent = new Date().toLocaleDateString('bn-BD', { day: 'numeric', month: 'long', year: 'numeric' });
+        }
+
+        originalTitle = document.title;
+        document.title = 'সীরাত কুইজ - ফলাফল';
+
+        window.addEventListener('afterprint', cleanupPrint, { once: true });
+        window.print();
+      }
+
+      document.addEventListener('click', (e) => {
+        const btn = e.target.closest('.btn-print-result');
+        if (!btn) return;
+        const card = btn.closest('.result-card');
+        if (card) printResultCard(card);
+      });
+    })();
+
+    function showStudentResult(student) {
+      resultArea.innerHTML += generateStudentResultHtml(student);
+    }
+
+    function showMessage(html, type) {
+      resultArea.innerHTML = `<div class="message-box ${type}">${html}</div>`;
+    }
+
+    // এডমিন লগইন
+    const loginOverlay = document.getElementById("login-overlay");
+    const loginCloseBtn = document.getElementById("login-close-btn");
+    const adminLoginForm = document.getElementById("admin-login-form");
+    const loginError = document.getElementById("login-error");
+    const btnAdminLoginTrigger = document.getElementById("btn-admin-login-trigger");
+
+    btnAdminLoginTrigger.addEventListener("click", () => {
+      if (sessionStorage.getItem("quiz_admin_logged_in") === "true") {
+        window.location.href = "index.html";
+        return;
+      }
+      loginOverlay.classList.add("active");
+      loginError.style.display = "none";
+      const passInput = document.getElementById("admin-password");
+      passInput.value = "";
+      passInput.focus();
+    });
+
+    loginCloseBtn.addEventListener("click", () => {
+      loginOverlay.classList.remove("active");
+      loginError.style.display = "none";
+    });
+
+    loginOverlay.addEventListener("click", (e) => {
+      if (e.target === loginOverlay) {
+        loginOverlay.classList.remove("active");
+        loginError.style.display = "none";
+      }
+    });
+
+    adminLoginForm.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      loginError.style.display = "none";
+
+      const password = document.getElementById("admin-password").value.trim();
+      if (!password) {
+        loginError.textContent = "অনুগ্রহ করে পাসওয়ার্ড লিখুন।";
+        loginError.style.display = "block";
+        return;
+      }
+
+      if (!supabaseClient) {
+        loginError.textContent = "সার্ভারের সাথে সংযোগ নেই। পেজ রিফ্রেশ করুন।";
+        loginError.style.display = "block";
+        return;
+      }
+
+      const btnLogin = document.getElementById("btn-admin-login");
+      btnLogin.disabled = true;
+      btnLogin.innerHTML = '<span class="spinner-inline"></span> যাচাই হচ্ছে...';
+
+      try {
+        // সুপাবেজ verify_admin RPC দিয়ে পাসওয়ার্ড যাচাই (কোনো ডাটা বদলায় না; ভুল হলে ১ সেকেন্ড দেরি হয়)
+        const { data, error } = await supabaseClient.rpc("verify_admin", { p_password: password });
+
+        if (error) {
+          console.error("RPC Error:", error);
+          loginError.textContent = "পাসওয়ার্ড যাচাইকরণে সমস্যা। আবার চেষ্টা করুন।";
+          loginError.style.display = "block";
+          return;
+        }
+
+        if (data !== true) {
+          loginError.textContent = "পাসওয়ার্ড ভুল হয়েছে। সঠিক এডমিন পাসওয়ার্ড দিন।";
+          loginError.style.display = "block";
+          return;
+        }
+
+        // লগইন সফল হলে সেশন স্টোরেজে সংরক্ষণ এবং বর্তমান এডমিন ড্যাশবোর্ডে প্রবেশ
+        sessionStorage.setItem("quiz_admin_logged_in", "true");
+        sessionStorage.setItem("quiz_admin_password", password);
+        window.location.href = "index.html";
+      } catch (err) {
+        console.error("লগইন ত্রুটি:", err);
+        loginError.textContent = "নেটওয়ার্ক সমস্যা। অনুগ্রহ করে আবার চেষ্টা করুন।";
+        loginError.style.display = "block";
+      } finally {
+        btnLogin.disabled = false;
+        btnLogin.innerHTML = `
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+            <polyline points="10 17 15 12 10 7"></polyline>
+            <line x1="15" y1="12" x2="3" y2="12"></line>
+          </svg>
+          লগইন করুন`;
+      }
+    });
+
+    // পেজ লোড
+    document.addEventListener("DOMContentLoaded", init);
+
+    // হেল্পলাইন নাম্বার কপি ফাংশন
+    function copyHelpline(number, btnElement) {
+      if (window.event) window.event.stopPropagation();
+      navigator.clipboard.writeText(number).then(() => {
+        const textSpan = btnElement.querySelector('.copy-text');
+        const originalText = textSpan ? textSpan.textContent : 'কপি';
+        if (textSpan) textSpan.textContent = '✓ কপিড';
+        btnElement.classList.add('copied');
+        setTimeout(() => {
+          if (textSpan) textSpan.textContent = originalText;
+          btnElement.classList.remove('copied');
+        }, 1500);
+      }).catch(() => {
+        alert('নাম্বার কপি হয়েছে: ' + number);
+      });
+    }
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+import type { Locale, Messages } from "../config";
+
+/** Announcements (ঘোষণা; English label "Announcements" — "Notice" is the press section, decision Q9): list and detail pages. English texts are drafts for the organization's review. */
+const bn = {
+  // "ঘোষণা" like the menu item; not "বিজ্ঞপ্তি" (≈ notice), which would suggest the separate Notice page (decision Q9).
+  title: "ঘোষণা",
+  eyebrow: "সংগঠনের খবর",
+  crumb: "ঘোষণা",
+  intro: "সংগঠনের সর্বশেষ ঘোষণা ও আয়োজনের খবর।",
+  metaTitle: "ঘোষণা",
+  metaTitlePage: "ঘোষণা — পৃষ্ঠা {page}",
+  metaDescription: "ইনকিলাব যুব সংগঠনের সর্বশেষ ঘোষণা ও আয়োজনের খবর।",
+  listLabel: "ঘোষণার তালিকা",
+  emptyTitle: "এখনো কোনো ঘোষণা প্রকাশ করা হয়নি",
+  emptyBody: "নতুন ঘোষণা প্রকাশিত হলে এখানে দেখা যাবে।",
+  count: "মোট {count}টি ঘোষণা",
+  pageOf: "পৃষ্ঠা {page} / {total}",
+  pinned: "গুরুত্বপূর্ণ",
+  readMore: "বিস্তারিত পড়ুন",
+  publishedOn: "প্রকাশিত:",
+  noBody: "এই ঘোষণায় বিস্তারিত কোনো বিবরণ নেই।",
+  share: "শেয়ার করুন",
+  back: "সব ঘোষণা",
+  pagerLabel: "পৃষ্ঠা নির্বাচন",
+  previousPage: "আগের পৃষ্ঠা",
+  nextPage: "পরের পৃষ্ঠা",
+  page: "পৃষ্ঠা {page}",
+  notFound: "ঘোষণা পাওয়া যায়নি",
+  englishMissing: "এই ঘোষণাটি এখনো শুধু বাংলায় প্রকাশিত হয়েছে।",
+  englishPartial: "এই ঘোষণার বিস্তারিত অংশ এখনো শুধু বাংলায় আছে।",
+} as const;
+
+const en: Messages<typeof bn> = {
+  title: "Announcements",
+  eyebrow: "News from the organization",
+  crumb: "Announcements",
+  intro: "The organization's latest announcements and event news.",
+  metaTitle: "Announcements",
+  metaTitlePage: "Announcements — page {page}",
+  metaDescription: "Latest announcements and event news from Inqilab Jubo Sangathan.",
+  listLabel: "List of announcements",
+  emptyTitle: "No announcements have been published yet",
+  emptyBody: "New announcements will appear here once they are published.",
+  count: "{count} announcements in total",
+  pageOf: "Page {page} of {total}",
+  pinned: "Important",
+  readMore: "Read more",
+  publishedOn: "Published:",
+  noBody: "This announcement has no further details.",
+  share: "Share",
+  back: "All announcements",
+  pagerLabel: "Choose a page",
+  previousPage: "Previous page",
+  nextPage: "Next page",
+  page: "Page {page}",
+  notFound: "Announcement not found",
+  englishMissing: "This announcement has so far been published in Bengali only.",
+  englishPartial: "The details of this announcement are so far available in Bengali only.",
+};
+
+export const announcements: Record<Locale, Messages<typeof bn>> = { bn, en };
