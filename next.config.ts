@@ -83,9 +83,8 @@ const nextConfig: NextConfig = {
   },
   async rewrites() {
     return [
-      { source: '/quiz', destination: '/quiz/student.html' },
-      { source: '/bn/quiz', destination: '/quiz/student.html' },
-      { source: '/en/quiz', destination: '/quiz/student.html' },
+      { source: '/bn/quiz', destination: '/quiz' },
+      { source: '/en/quiz', destination: '/quiz' },
     ];
   },
 };
