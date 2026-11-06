@@ -255,6 +255,8 @@ export default function QuizClient() {
   const [institutions, setInstitutions] = useState<string[]>([]);
   const [institution, setInstitution] = useState("");
   const [comboOpen, setComboOpen] = useState(false);
+  /* true হলে ড্রপডাউনে টাইপ-ফিল্টার ছাড়া সব প্রতিষ্ঠান দেখায় (ভুল সিলেকশন বদলাতে) */
+  const [comboShowAll, setComboShowAll] = useState(false);
   const [roll, setRoll] = useState("");
   const [rollHot, setRollHot] = useState(false);
   const [searching, setSearching] = useState(false);
@@ -302,6 +304,7 @@ export default function QuizClient() {
     setInstitution("");
     setInstitutions([]);
     setComboOpen(false);
+    setComboShowAll(false);
     if (y === "") return;
     const { data, error } = await supabase.rpc("get_quiz_institutions", { p_year: y });
     if (yearValueRef.current !== y) return; // এর মধ্যে সাল বদলে গেছে
@@ -309,9 +312,19 @@ export default function QuizClient() {
   };
 
   const filteredInstitutions = useMemo(() => {
+    if (comboShowAll) return institutions;
     const f = institution.trim().toLowerCase();
     return institutions.filter((inst) => !f || inst.toLowerCase().includes(f));
-  }, [institutions, institution]);
+  }, [institutions, institution, comboShowAll]);
+
+  /* ফিল্ডে ক্লিক/ফোকাস: আগে থেকে পূর্ণ নাম সিলেক্ট করা থাকলে পুরো তালিকা দেখাও,
+     যাতে নাম কেটে না ফেলেও অন্য প্রতিষ্ঠান বাছা যায়। আধা-টাইপ করা থাকলে ফিল্টারই থাকে। */
+  const openCombo = () => {
+    if (year === "") return;
+    const v = institution.trim().toLowerCase();
+    if (v && institutions.some((i) => i.toLowerCase() === v)) setComboShowAll(true);
+    setComboOpen(true);
+  };
 
   const showMessage = (type: "error" | "not-found", content: React.ReactNode) =>
     setView({ kind: "message", type, content });
@@ -344,10 +357,9 @@ export default function QuizClient() {
           p_institution: institutionRaw,
         });
         if (error) throw error;
-        // লাইভ RPC বর্তমানে p_institution ফিল্টার প্রয়োগ করে না (সব প্রতিষ্ঠানের
-        // শিক্ষার্থী ফেরত দেয়) — তাই static পেজের আচরণ অনুযায়ী ব্রাউজারেই
-        // নির্বাচিত প্রতিষ্ঠান দিয়ে ফিল্টার করা হয় (get_student_result-এর
-        // "verify in frontend" প্যাটার্নের মতো)।
+        // RPC এখন সার্ভারেই p_institution ফিল্টার করে (2026-11-06 মাইগ্রেশন);
+        // আংশিক নাম টাইপ করলে একাধিক প্রতিষ্ঠান মিলতে পারে বলে ব্রাউজারের
+        // এই ফিল্টারটা সেফটি নেট হিসেবে রাখা — static পেজের আচরণের সঙ্গে মিলিয়ে।
         const students = ((data ?? []) as InstitutionStudent[]).filter((s) =>
           (s.institution ?? "").toLowerCase().includes(institutionRaw.toLowerCase()),
         );
@@ -554,14 +566,11 @@ export default function QuizClient() {
                         disabled={year === ""}
                         onChange={(e) => {
                           setInstitution(e.target.value);
+                          setComboShowAll(false);
                           if (year !== "") setComboOpen(true);
                         }}
-                        onFocus={() => {
-                          if (year !== "") setComboOpen(true);
-                        }}
-                        onClick={() => {
-                          if (year !== "") setComboOpen(true);
-                        }}
+                        onFocus={openCombo}
+                        onClick={openCombo}
                       />
                       <button
                         type="button"
@@ -570,7 +579,10 @@ export default function QuizClient() {
                         aria-label="ড্রপডাউন খুলুন"
                         title="সব প্রতিষ্ঠান দেখুন"
                         disabled={year === ""}
-                        onClick={() => setComboOpen((o) => !o)}
+                        onClick={() => {
+                          setComboShowAll(true);
+                          setComboOpen((o) => !o);
+                        }}
                       >
                         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                           <polyline points="6 9 12 15 18 9"></polyline>
